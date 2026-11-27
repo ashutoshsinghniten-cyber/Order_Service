@@ -11,8 +11,8 @@ import java.util.Optional;
 public class OrderRepository {
 
     private final List<OrderDto> data = List.of(
-            new OrderDto(100L, 1L, 500L, 2),
-            new OrderDto(101L, 2L, 501L, 1));
+            new OrderDto(100L, 1L, 500L, 2.0, "PENDING",  "2026-11-27"),
+            new OrderDto(101L, 2L, 501L, 1.0, "SHIPPED",  "2026-11-26"));
 
     public List<OrderDto> findAll() {
         return data;
